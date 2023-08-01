@@ -31,7 +31,7 @@ public extension EncodableTuple {
 }
 
 public extension DecodableTuple where
-    Self: LinkedTuple, Self.DroppedLast: DecodableTuple, Self.Last: Decodable
+    Self: ListTuple, Self.DroppedLast: DecodableTuple, Self.Last: Decodable
 {
     @inlinable
     init(paramsFrom container: inout UnkeyedDecodingContainer) throws {
@@ -42,7 +42,7 @@ public extension DecodableTuple where
 }
 
 public extension EncodableTuple where
-    Self: LinkedTuple, Self.DroppedLast: EncodableTuple, Self.Last: Encodable
+    Self: ListTuple, Self.DroppedLast: EncodableTuple, Self.Last: Encodable
 {
     @inlinable
     func encode(paramsTo container: inout UnkeyedEncodingContainer) throws {

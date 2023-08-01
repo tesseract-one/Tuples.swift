@@ -35,7 +35,7 @@ public extension OneTypeTuple {
     @inlinable var base: any SomeTuple { self }
 }
 
-public protocol LinkedTuple: SomeTuple {
+public protocol ListTuple: SomeTuple {
     associatedtype First
     associatedtype Last
     associatedtype DroppedFirst: SomeTuple
@@ -50,7 +50,7 @@ public protocol LinkedTuple: SomeTuple {
     var dropFirst: DroppedFirst { get }
 }
 
-public extension LinkedTuple {
+public extension ListTuple {
     @inlinable
     init(first: DroppedLast.STuple, last: Last) {
         self.init(first: DroppedLast(first), last: last)
