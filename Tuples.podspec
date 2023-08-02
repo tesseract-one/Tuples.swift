@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'Tuples'
-  s.version          = '0.1.0'
+  s.version          = '0.1.1'
   s.summary          = 'Generic Tuple types for Swift'
 
   s.description      = <<-DESC
@@ -13,9 +13,9 @@ Pod::Spec.new do |s|
   s.author           = { 'Tesseract Systems, Inc.' => 'info@tesseract.one' }
   s.source           = { :git => 'https://github.com/tesseract-one/Tuples.swift.git', :tag => s.version.to_s }
 
-  s.ios.deployment_target = '13.0'
-  s.osx.deployment_target = '10.15'
-  s.tvos.deployment_target = '13.0'
+  s.ios.deployment_target = '10.0'
+  s.osx.deployment_target = '10.12'
+  s.tvos.deployment_target = '10.0'
   s.watchos.deployment_target = '6.0'
   
   s.swift_version = '5.4'
