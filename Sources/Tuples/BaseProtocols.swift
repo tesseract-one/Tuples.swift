@@ -12,7 +12,7 @@ public protocol SomeTuple: CustomStringConvertible {
     init(_ t: STuple)
     
     var anyArray: Array<Any> { get }
-    var tuple: STuple { get }
+    var tuple: STuple { get set }
     
     var paramsDescription: String { get }
     
@@ -44,10 +44,10 @@ public protocol ListTuple: SomeTuple {
     init(first: DroppedLast, last: Last)
     init(first: First, last: DroppedFirst)
     
-    var first: First { get }
-    var last: Last { get }
-    var dropLast: DroppedLast { get }
-    var dropFirst: DroppedFirst { get }
+    var first: First { get set }
+    var last: Last { get set }
+    var dropLast: DroppedLast { get set }
+    var dropFirst: DroppedFirst { get set }
 }
 
 public extension ListTuple {
