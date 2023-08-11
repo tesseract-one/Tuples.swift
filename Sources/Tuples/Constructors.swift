@@ -8,69 +8,69 @@
 import Foundation
 
 @inlinable
-public func T_<T>() -> Tuple0<T> { Tuple0() }
+public func TL<T>() -> Tuple0<T> { Tuple0() }
 @inlinable
-public func T_<T>(_ t: ()) -> Tuple0<T> { Tuple0() }
+public func TL<T>(_ t: ()) -> Tuple0<T> { Tuple0() }
 
 @inlinable
-public func T_<T1>(_ t: (T1)) -> Tuple1<T1> { Tuple1(t) }
+public func TL<T1>(_ t: (T1)) -> Tuple1<T1> { Tuple1(t) }
 
 @inlinable
-public func T_<T1, T2>(_ t: (T1, T2)) -> Tuple2<T1, T2> { Tuple2(t) }
+public func TL<T1, T2>(_ t: (T1, T2)) -> Tuple2<T1, T2> { Tuple2(t) }
 @inlinable
-public func T_<T1, T2>(_ v0: T1, _ v1: T2) -> Tuple2<T1, T2> { Tuple2(v0, v1) }
+public func TL<T1, T2>(_ v0: T1, _ v1: T2) -> Tuple2<T1, T2> { Tuple2(v0, v1) }
 
 @inlinable
-public func T_<T1, T2, T3>(
+public func TL<T1, T2, T3>(
     _ t: (T1, T2, T3)
 ) -> Tuple3<T1, T2, T3> { Tuple3(t) }
 @inlinable
-public func T_<T1, T2, T3>(
+public func TL<T1, T2, T3>(
     _ v0: T1, _ v1: T2, _ v2: T3
 ) -> Tuple3<T1, T2, T3> { Tuple3(v0, v1, v2) }
 
 @inlinable
-public func T_<T1, T2, T3, T4>(
+public func TL<T1, T2, T3, T4>(
     _ t: (T1, T2, T3, T4)
 ) -> Tuple4<T1, T2, T3, T4> { Tuple4(t) }
 @inlinable
-public func T_<T1, T2, T3, T4>(
+public func TL<T1, T2, T3, T4>(
     _ v0: T1, _ v1: T2, _ v2: T3, _ v3: T4
 ) -> Tuple4<T1, T2, T3, T4> { Tuple4(v0, v1, v2, v3) }
 
 @inlinable
-public func T_<T1, T2, T3, T4, T5>(
+public func TL<T1, T2, T3, T4, T5>(
     _ t: (T1, T2, T3, T4, T5)
 ) -> Tuple5<T1, T2, T3, T4, T5> { Tuple5(t) }
 @inlinable
-public func T_<T1, T2, T3, T4, T5>(
+public func TL<T1, T2, T3, T4, T5>(
     _ v0: T1, _ v1: T2, _ v2: T3, _ v3: T4, _ v4: T5
 ) -> Tuple5<T1, T2, T3, T4, T5> { Tuple5(v0, v1, v2, v3, v4) }
 
 @inlinable
-public func T_<T1, T2, T3, T4, T5, T6>(
+public func TL<T1, T2, T3, T4, T5, T6>(
     _ t: (T1, T2, T3, T4, T5, T6)
 ) -> Tuple6<T1, T2, T3, T4, T5, T6> { Tuple6(t) }
 @inlinable
-public func T_<T1, T2, T3, T4, T5, T6>(
+public func TL<T1, T2, T3, T4, T5, T6>(
     _ v0: T1, _ v1: T2, _ v2: T3, _ v3: T4, _ v4: T5, _ v5: T6
 ) -> Tuple6<T1, T2, T3, T4, T5, T6> { Tuple6(v0, v1, v2, v3, v4, v5) }
 
 @inlinable
-public func T_<T1, T2, T3, T4, T5, T6, T7>(
+public func TL<T1, T2, T3, T4, T5, T6, T7>(
     _ t: (T1, T2, T3, T4, T5, T6, T7)
 ) -> Tuple7<T1, T2, T3, T4, T5, T6, T7> { Tuple7(t) }
 @inlinable
-public func T_<T1, T2, T3, T4, T5, T6, T7>(
+public func TL<T1, T2, T3, T4, T5, T6, T7>(
     _ v0: T1, _ v1: T2, _ v2: T3, _ v3: T4, _ v4: T5, _ v5: T6, _ v6: T7
 ) -> Tuple7<T1, T2, T3, T4, T5, T6, T7> { Tuple7(v0, v1, v2, v3, v4, v5, v6) }
 
 @inlinable
-public func T_<T1, T2, T3, T4, T5, T6, T7, T8>(
+public func TL<T1, T2, T3, T4, T5, T6, T7, T8>(
     _ t: (T1, T2, T3, T4, T5, T6, T7, T8)
 ) -> Tuple8<T1, T2, T3, T4, T5, T6, T7, T8> { Tuple8(t) }
 @inlinable
-public func T_<T1, T2, T3, T4, T5, T6, T7, T8>(
+public func TL<T1, T2, T3, T4, T5, T6, T7, T8>(
     _ v0: T1, _ v1: T2, _ v2: T3, _ v3: T4, _ v4: T5, _ v5: T6, _ v6: T7,
     _ v7: T8
 ) -> Tuple8<T1, T2, T3, T4, T5, T6, T7, T8> {
@@ -78,11 +78,11 @@ public func T_<T1, T2, T3, T4, T5, T6, T7, T8>(
 }
 
 @inlinable
-public func T_<T1, T2, T3, T4, T5, T6, T7, T8, T9>(
+public func TL<T1, T2, T3, T4, T5, T6, T7, T8, T9>(
     _ t: (T1, T2, T3, T4, T5, T6, T7, T8, T9)
 ) -> Tuple9<T1, T2, T3, T4, T5, T6, T7, T8, T9> { Tuple9(t) }
 @inlinable
-public func T_<T1, T2, T3, T4, T5, T6, T7, T8, T9>(
+public func TL<T1, T2, T3, T4, T5, T6, T7, T8, T9>(
     _ v0: T1, _ v1: T2, _ v2: T3, _ v3: T4, _ v4: T5, _ v5: T6, _ v6: T7,
     _ v7: T8, _ v8: T9
 ) -> Tuple9<T1, T2, T3, T4, T5, T6, T7, T8, T9> {
@@ -90,11 +90,11 @@ public func T_<T1, T2, T3, T4, T5, T6, T7, T8, T9>(
 }
 
 @inlinable
-public func T_<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10>(
+public func TL<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10>(
     _ t: (T1, T2, T3, T4, T5, T6, T7, T8, T9, T10)
 ) -> Tuple10<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10> { Tuple10(t) }
 @inlinable
-public func T_<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10>(
+public func TL<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10>(
     _ v0: T1, _ v1: T2, _ v2: T3, _ v3: T4, _ v4: T5, _ v5: T6, _ v6: T7,
     _ v7: T8, _ v8: T9, _ v9: T10
 ) -> Tuple10<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10> {
@@ -102,11 +102,11 @@ public func T_<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10>(
 }
 
 @inlinable
-public func T_<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11>(
+public func TL<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11>(
     _ t: (T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11)
 ) -> Tuple11<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11> { Tuple11(t) }
 @inlinable
-public func T_<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11>(
+public func TL<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11>(
     _ v0: T1, _ v1: T2, _ v2: T3, _ v3: T4, _ v4: T5, _ v5: T6, _ v6: T7,
     _ v7: T8, _ v8: T9, _ v9: T10, _ v10: T11
 ) -> Tuple11<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11> {
@@ -114,11 +114,11 @@ public func T_<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11>(
 }
 
 @inlinable
-public func T_<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12>(
+public func TL<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12>(
     _ t: (T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12)
 ) -> Tuple12<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12> { Tuple12(t) }
 @inlinable
-public func T_<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12>(
+public func TL<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12>(
     _ v0: T1, _ v1: T2, _ v2: T3, _ v3: T4, _ v4: T5, _ v5: T6, _ v6: T7,
     _ v7: T8, _ v8: T9, _ v9: T10, _ v10: T11, _ v11: T12
 ) -> Tuple12<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12> {
@@ -126,11 +126,11 @@ public func T_<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12>(
 }
 
 @inlinable
-public func T_<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13>(
+public func TL<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13>(
     _ t: (T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13)
 ) -> Tuple13<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13> { Tuple13(t) }
 @inlinable
-public func T_<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13>(
+public func TL<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13>(
     _ v0: T1, _ v1: T2, _ v2: T3, _ v3: T4, _ v4: T5, _ v5: T6, _ v6: T7,
     _ v7: T8, _ v8: T9, _ v9: T10, _ v10: T11, _ v11: T12, _ v12: T13
 ) -> Tuple13<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13> {
@@ -138,13 +138,13 @@ public func T_<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13>(
 }
 
 @inlinable
-public func T_<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14>(
+public func TL<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14>(
     _ t: (T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14)
 ) -> Tuple14<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14> {
     Tuple14(t)
 }
 @inlinable
-public func T_<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14>(
+public func TL<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14>(
     _ v0: T1, _ v1: T2, _ v2: T3, _ v3: T4, _ v4: T5, _ v5: T6, _ v6: T7,
     _ v7: T8, _ v8: T9, _ v9: T10, _ v10: T11, _ v11: T12, _ v12: T13,
     _ v13: T14
@@ -153,13 +153,13 @@ public func T_<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14>(
 }
 
 @inlinable
-public func T_<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15>(
+public func TL<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15>(
     _ t: (T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15)
 ) -> Tuple15<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15> {
     Tuple15(t)
 }
 @inlinable
-public func T_<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15>(
+public func TL<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15>(
     _ v0: T1, _ v1: T2, _ v2: T3, _ v3: T4, _ v4: T5, _ v5: T6, _ v6: T7,
     _ v7: T8, _ v8: T9, _ v9: T10, _ v10: T11, _ v11: T12, _ v12: T13,
     _ v13: T14, _ v14: T15
@@ -167,7 +167,7 @@ public func T_<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15>
     Tuple15(v0, v1, v2, v3, v4, v5, v6, v7, v8, v9, v10, v11, v12, v13, v14)
 }
 
-public func T_<S: Collection>(array: S) -> (any OneTypeTuple<S.Element>)? {
+public func TL<S: Collection>(array: S) -> (any OneTypeTuple<S.Element>)? {
     let count = array.count
     guard count > 0 else { return Tuple0<S.Element>() }
     var i = array.makeIterator()
