@@ -54,20 +54,20 @@ func accept_tuple<T>(tuple: T.STuple) where T: SomeTuple2, T.T1: StringProtocol,
 ### Common constructor method
 ```swift
 // Will create Tuple4<Int, String, Double, Array<Int>> instance
-let tupleStruct = T_((1, "string", 2.0, [1, 2, 3]))
+let tupleStruct = TL((1, "string", 2.0, [1, 2, 3]))
 ```
 
 ### Tuple from array
 ```swift
  // Tuple3<Int, Int, Int> returned but typed as OneTypeTuple<Int>
-let tuple: OneTypeTuple<Int> = T_([1, 2, 3])
+let tuple: OneTypeTuple<Int> = TL([1, 2, 3])
 ```
 
 ### Codable
 Tuples can be encoded / decoded as arrays.
 
 ```swift
-let json = try! JSONEncoder().encode(T_((1, "string", Data())))
+let json = try! JSONEncoder().encode(TL((1, "string", Data())))
 let tuple = try JSONDecodder().decode(Tuple3<Int, String, Data>.self, from: json).tuple
 ```
 
